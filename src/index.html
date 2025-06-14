@@ -1,35 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de cartas aleatorio.js</title>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card" style="width: 18rem; height: 420px">
+    <p id="palosUp" class ="d-flex align-items-start" style ="font-size: 68px; margin-left: 10px; margin-top: 10px;">♥</p>
+    <h1 id="numb" class ="d-flex justify-content-center align-items-end" style ="font-size: 100px">A</h1>
+    <p id="palosDown" class ="d-flex align-items-end me-4" style ="font-size: 68px; transform: rotate(180deg); position: absolute;  bottom: 10px; right: 10px; margin: 0">♥</p>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
