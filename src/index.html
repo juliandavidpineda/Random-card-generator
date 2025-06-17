@@ -11,13 +11,21 @@
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 </head>
 
-<body class="bg-dark d-flex justify-content-center align-items-center min-vh-100">
-  <div class="card" style="width: 18rem; height: 420px">
-    <p id="palosUp" class ="d-flex align-items-start" style ="font-size: 68px; margin-left: 10px; margin-top: 10px;">♥</p>
-    <h1 id="numb" class ="d-flex justify-content-center align-items-end" style ="font-size: 100px">A</h1>
-    <p id="palosDown" class ="d-flex align-items-end me-4" style ="font-size: 68px; transform: rotate(180deg); position: absolute;  bottom: 10px; right: 10px; margin: 0">♥</p>
+<body class="d-flex flex-column min-vh-100">
+  <div class="d-flex justify-content-center align-items-center flex-grow-1">
+    <div class="card img-elevada" style="width: 18rem; height: 420px">
+      <p id="palosUp" class="d-flex align-items-start" style="font-size: 68px; margin-left: 10px; margin-top: 10px;">♥
+      </p>
+      <h1 id="numb" class="d-flex justify-content-center align-items-end" style="font-size: 100px">A</h1>
+      <p id="palosDown" class="me-2 mt-5" style="font-size: 68px; transform: rotate(180deg);">♥</p>
+    </div>
   </div>
-  <script type="module" src="/app.js"></script>
+  <div class="pb-5 d-flex justify-content-center align-items-end">
+    <button type="button" class="btn btn-light img-elevada" onclick="window.location.reload()">Recargar página</button>
+  </div>
+
+
+    <script type="module" src="/app.js"></script>
 </body>
 
 </html>

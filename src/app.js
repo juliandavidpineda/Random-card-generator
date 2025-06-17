@@ -19,9 +19,8 @@ window.onload = function() {
   if (randomPalos === "♦" || randomPalos === "♥") {
   domPalosUp.style.color = "red";
   domPalosDown.style.color = "red";
+  domCenter.style.color = "red"
 }
-
-  
   
   domPalosUp.innerText = randomPalos;
   domPalosDown.innerText = randomPalos;
