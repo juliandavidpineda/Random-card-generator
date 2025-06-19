@@ -26,4 +26,7 @@ window.onload = function() {
   domPalosDown.innerText = randomPalos;
   domCenter.innerText = randomNumbers;
 
+  let reloadButton = document.getElementById("reloadButton");
+  reloadButton.innerText = "Recargar página"
+
 };
